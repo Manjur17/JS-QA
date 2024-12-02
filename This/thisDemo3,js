@@ -1,5 +1,5 @@
-// New Binding (Constructor Functions)
-//New keyword
+// New Binding (Constructor Functions) using new keyword
+
 /* when we make a new object using the new keyword, then 
    new keyword creates a plain object and this plain object is the call site for the constructor hence, 
    this keyword refers to the plain object altogether.

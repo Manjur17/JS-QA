@@ -61,7 +61,8 @@ let iphone = new Product("Iphone 11", 900, "Electronics", "Apple Iphone 11", 4.5
 
 console.log(iphone);
 
-// iphone.name = "Iphone 13";
+//manually setting value just like normal object
+// iphone.name = "Iphone 13"; //as name is private now inside class, so #name and name are different keys in iphone object
 // iphone.price = -1000;
 // iphone.category = "Electronics";
 
@@ -70,23 +71,3 @@ console.log(iphone);
 // iphone.displayProduct();
 
 // console.log(iphone.getPrice())
-
-/**
- * 
- * let obj ={
-    x:1,
-    y:2,
-
-    fn: function(){
-       let x = 3;
-       let y = 4;
-       const printVariables = () =>{
-            console.log(this.x,this.y)
-             console.log(x,y)
-
-       }
-        printVariables()
-    }
-}
-obj.fn()
- */
