@@ -4,7 +4,6 @@ const purchasedProduct = {
     orderId: "xsya122", orderDate: "11/09/2024",
     ...product
 };
-
 //const { category } = product;
 //const {categoryId} = category;
 
