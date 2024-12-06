@@ -72,13 +72,13 @@ numbers.reduce((prev, item) => {
     return prev + item;
 }, 2);
 
-// some in javascript
-numbers.some((item, index, array) => {
+// some in javascript -> returns a boolean
+let ans1 = numbers.some((item, index, array) => {
     return item > 3;
 });
 
 // every in javascript
-numbers.every((item, index, array) => {
+let ans2 = numbers.every((item, index, array) => {
     return item < 10;
 });
 
