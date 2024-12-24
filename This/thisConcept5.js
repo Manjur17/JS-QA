@@ -1,70 +1,89 @@
-
 const obj = {
     name: "Alice",
-    greet() {
-        console.log(this.name); //this obj
+    greet: () => {
+        //this is global one
+        console.log(this.name); //1. undefined
 
         const innerObj = {
             name: "Inner",
             getName: function () {
-                console.log(this.name); //go 1 scope out to line 6 to find this
-            }
-        }
+                //this is { name: "Suresh" }
+                console.log(this.name); //2.Suresh
 
-        innerObj.getName();
+                //find this here for innerMost which is -> { name: "Suresh" }
+                const innerMost = () => {
+                    //this -> { name: "Suresh" }
+                    console.log(this.name); //3.Suresh
+
+                    const deeper = () => {
+                        //find this here -> { name: "Suresh" }
+                        const deepest = function () {
+                            //this -> { name: "BoundDeepest" }
+                            console.log(this.name); //4.BoundDeepest
+
+                            const final = () => {
+                                console.log(this.name); //5.BoundDeepest
+                            };
+
+                            return final.call({ name: "Final" });
+                        }.bind({ name: "BoundDeepest" });
+
+                        return deepest.call({ name: "Deepest" });
+                    };
+
+                    return deeper.call({ name: "Deeper" });
+                };
+
+                innerMost.call({ name: "Kumar" });
+            }.bind({ name: "Suresh" })
+        };
+
+        innerObj.getName.call({ name: "Ravi" });
     }
-}
-
+};
 
 obj.greet();
 
-const obj1 = {
+//-----------------------------------------------------
+
+const obj2 = {
     name: "Alice",
-    greet() {
-        console.log(this.name); //this obj
+    greet: function () {
+        console.log(this.name);
 
         const innerObj = {
             name: "Inner",
-            getName: () => {
-                console.log(this.name); //go 1 scope out to line 6 to find this
-            }
-        }
+            getName: function () {
+                console.log(this.name);
 
-        innerObj.getName();
-    }
-}
+                const innerMost = () => {
+                    console.log(this.name);
 
+                    const deeper = function () {
+                        console.log(this.name);
 
-obj1.greet();
+                        const deepest = () => {
+                            console.log(this.name);
 
+                            const final = function () {
+                                console.log(this.name);
+                            }.bind({ name: "BoundFinal" });
 
-const obj2 = { 
-    name: "Alice",
-    greet() {
-        console.log(this.name); //Alice
+                            return final.call({ name: "Final" });
+                        }
 
-        const innerObj = {
-            name: "Inner",
-            getName: function() { 
-                console.log(this.name); //undefined
+                        return deepest.call({ name: "Deepest" });
+                    }.bind({ name: "BoundDeeper" });
 
-                const innerMost = function() {
-                    //find this here -> { name: "Ali" }
-                    const deepest = () => {
-                        console.log(this.name); //Ali
-                    };
-                    return deepest.call({ name: "Bound" });
-                    
-                }.bind({ name: "Ali" });
+                    return deeper.call({ name: "Deeper" });
+                };
 
-                innerMost();
-            }
-        }
-        
-        const some = innerObj.getName;
-        some();
-        
-    }
-}
+                innerMost.call({ name: "Kumar" });
+            }.bind({ name: "Suresh" })
+        };
+
+        innerObj.getName.call({ name: "Ravi" });
+    }.bind({ name: "Outer" })
+};
 
 obj2.greet();
