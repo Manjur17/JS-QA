@@ -5,6 +5,6 @@ function removeDuplicates(nums) {
             i--; //on removing do i-- and on adding do i++
         }
     }
-    //returned the length
+    
     return nums.length;  
 };
