@@ -6,5 +6,5 @@ function removeDuplicates(nums) {
         }
     }
 
-    return nums.length;
+    return nums.length;  
 };
