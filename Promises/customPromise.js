@@ -76,7 +76,7 @@ class CustomPromise {
             }
         })
     }
-    
+
     catch(onreject) {
         return this.then(null, onreject)
     }
