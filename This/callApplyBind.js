@@ -17,7 +17,7 @@ function getFullName() {
     return `My full name is ${this.firstName} ${this.lastName}`;
 }
 
-const ans = getFullName.apply(person);
+const ans = getFullName.apply(person); //executes the function immediately and returns the value
 console.log(ans);
 console.log(getFullName.call(person));
 
