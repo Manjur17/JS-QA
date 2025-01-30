@@ -9,3 +9,6 @@ JS interview Preparations
 
 [JS patterns and concepts](https://docs.google.com/document/d/1zqKsQEbyJ2RfxKOfaM8ArzXrJyjdjBxhpbs5yb14XSc/edit?tab=t.0)
 
+[Machine Coding Pratice](https://stackblitz.com/@Manjur17)
+
+[leetcode](https://leetcode.com/u/manjoor_21/)
