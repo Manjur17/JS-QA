@@ -14,13 +14,32 @@ console.log(ans("developer")); // Pass "Hello" when invoking
 //output -> function 
 
 Function.prototype.customBind = function (obj, ...params) {
-    //Object.setPrototypeOf(this, obj); //change prototype of function to obj
+    if (typeof this != 'function') {
+        throw new Error(this, 'is not a callable');
+    }
 
-    return function (...args) {
+    return (...args) => {
         const combinedArgs = [...params, ...args];
         return this.apply(obj, combinedArgs);
     }
 }
 
-const ans1 = greet.customBind(person); // Bind only the context
-console.log(ans("Hello", "developer")); // Pass "Hello" when invoking
+const ans1 = greet.customBind(person, "Hello"); // Bind only the context
+console.log(ans1("developer")); // Pass "Hello" when invoking
+
+
+Function.prototype.myBind = function (obj = {}, ...args) {
+    if (typeof this !== "function") {
+        throw new Error(this + "cannot be bound as it's not callable");
+    }
+
+    obj.fn = this;
+
+    return function (...newArgs) {
+        return obj.fn(...args, ...newArgs);
+    };
+};
+
+
+const ans2 = greet.myBind(person, "Hello"); // Bind only the context
+console.log(ans2("developer")); // Pass "Hello" when invoking

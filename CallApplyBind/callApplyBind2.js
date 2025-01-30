@@ -47,3 +47,19 @@ const greet = () => {
 console.log(greet.call({ name: "Manjur" }));
 
 
+//------------------------------------------------------------------------
+
+var status = '0'
+setTimeout(() => {
+    const status = 'Θ'
+    const data = {
+        status: 'B',
+        getStatus() {
+            return this.status;
+        }
+    };
+
+    console.log(data.getStatus()); //B
+    //this becomes global object as it is inside arrow function
+    console.log(data.getStatus.call(this)); //O
+}, 0);
