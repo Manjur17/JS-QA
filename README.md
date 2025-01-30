@@ -1,7 +1,7 @@
 JS interview Preparations
 
 ## Resources
-[Medium Articles](https://github.com/Manjur17/JS-QA)
+[Medium Articles](https://medium.com/@skmanjuralli9)
 
 [React Patterns](https://docs.google.com/document/d/16T88avtpUCGQ67AhYnzCVmFBnI6NkyZqMdj_mXxD6EI/edit?tab=t.0)
 
