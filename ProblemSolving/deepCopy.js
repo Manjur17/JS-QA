@@ -12,7 +12,7 @@ function makeDeepCopy(obj) {
         finalObj[key] = makeDeepCopy(obj[key]); //we have to check if inner key's value is nested or not recursively
     }
 
-    return finalObj;
+    return finalObj;  
 
     // let keys = Object.keys(obj);
 
