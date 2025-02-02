@@ -1,70 +1,102 @@
-## 1st Techincal Round(1.15 hr)
- - 2 DSA question 
-     -> find the frequency and count of repeating word in a sentence(handle uppercases and lowercases)
-     -> 2 sum(using inbuild method and without any inbuild method)
-  
-  - 1 machine coding question
-     -> create a TODO application where user can 
-         add a todo
-         select the day from dropdown
-         select start time and end time
-         delete an individual todo
-         clear button to delete all todos
+## 1st Technical Round (1 hr 15 mins)
 
-         constraints
-            -> only 1 state variable allowed
-            -> use clean code and no extra/unnecessary variables should be created.
-            -> es6 syntax 
-            -> based on user click console.log the value the current set value.
+### DSA Questions
+- **Find the frequency and count of repeating words in a sentence** (handle uppercases and lowercases).
+- **Two Sum** (solve using both inbuilt methods and without any inbuilt methods).
 
-## 2nd Techincal Round(1 hr)
-   - syntax writting(write code on online editor by sharing screen) 
-     -> ways to create objects in JS and nested objects.
-     -> what is map and all its methods.
-     -> objects vs maps
-     -> what is JSON and json.stringify and write synatx.
-     -> what is difference between arrow function and normal function(was looking for how this works in difference function).
-     -> a lot of ES6 theory concepts.
-     -> DSA -> Flatten an array.
+### Machine Coding Question
+**Create a TODO application** where the user can:
+- Add a todo.
+- Select the day from a dropdown.
+- Select start time and end time.
+- Delete an individual todo.
+- Clear button to delete all todos.
 
-## 3rd Techincal Round(1.30 mins)
-   -  syntax writting(write code on online editor by sharing screen) 
-      -> shallow copy vs deep copy and when does shallow copy happens.
-      -> object destructuring, spread and rest operators, usecases.
-      -> how to do object destructuring for array and object, how to assign default name to destructed    objects, type of destructed object.
-      -> what is hoisting, TDZ and show code and how it works
-      -> what is closure and how it works ? write a code to show the working
-      -> difference between let, const and var -> write code and why const works for primitives and non-primitives?
-      -> difference between setTimeout and setInterval and usecases? how to stop the setInterval?
-      -> write a code to console.log("Hello world") for 5 times using setInterval and clear the interval on fifth print.
-      -> Promises and a couple of output based questions on event loop.
-      -> DSA Question -> make subarrays of given chunks(k) using inbuilt methods and without using inbult methods.
-      -> Events - event.stopPropagation, event.preventDefault, event delegation, event.stopImmediatePropagation, event.target, event.currentTarget, event delegation.
-      -> React questions : 
-            - states and lifecycle in react
-            - routing questions and how to do dynamic routing
-            - private and protected routed and RBAC(role based access control), how to implement it(gave solution using HOC, localStorage, sessionStorage)
-            -> Outlet in react router, how/ways to pass data using routing -> routing hooks.
-            -> ways to pass data in react.
-            -> ways to manage state in react.
-            -> when does re-render happens.
-            -> React portals and usecases.
-            -> useRefs and usecases.
-            -> memorization in react and usecases and hooks.
-            -> Redux architecture, reducers role(what parameters does a reducer takes) and action creators.
-            -> hook to call a reducers in redux and how redux figures out the correct reducer to update inside the store.
-            -> hook to select the current state in redux for a component.
-            -> is redux sync or async and how to do async task in redux ?
-            -> context apis and useContext hooks.
-            -> Some css question about ways to center a div(told flexbox, position and animation)
-            -> positions in css and the difference between(in which position the html elemnt remains in original document flow and in which cases it is removed from the document flow).
-            -> pseudo classes in css.
+**Constraints:**
+- Only **one state variable** allowed.
+- Use **clean code** (no extra/unnecessary variables should be created).
+- Use **ES6 syntax**.
+- Based on user interaction, log the **current set value** to the console.
 
- ## Cultral fit round(salary negotiation and hr round) (1 hr)
-  -> started with a DSA question - second largest element in an array
-  -> projects in current organisation and my contribution.
-  -> follow up HR question.
-  -> some js theory question(same question already asked in previous round).
+---
 
-            
-          
+## 2nd Technical Round (1 hr)
+
+### Syntax Writing (Write Code on an Online Editor by Sharing Screen)
+- **Ways to create objects in JS** and handling **nested objects**.
+- **Map and its methods**.
+- **Objects vs Maps**.
+- **JSON and `JSON.stringify`** (write syntax).
+- **Arrow function vs normal function** (focus on how `this` works in different functions).
+- **ES6 theory concepts**.
+- **DSA Question:** Flatten an array.
+
+---
+
+## 3rd Technical Round (1 hr 30 mins)
+
+### Syntax Writing (Write Code on an Online Editor by Sharing Screen)
+- **Shallow Copy vs Deep Copy** (when does shallow copy happen?).
+- **Object Destructuring, Spread and Rest Operators**, use cases.
+- **Object Destructuring for Arrays and Objects**:
+  - Assigning default names to destructured objects.
+  - Types of destructured objects.
+- **Hoisting, Temporal Dead Zone (TDZ)** (show code and explain).
+- **Closures** (write a code to demonstrate how it works).
+- **`let`, `const`, `var`** (write code and explain why `const` works for primitives and non-primitives).
+- **`setTimeout` vs `setInterval`**:
+  - Use cases.
+  - How to stop `setInterval`.
+  - Write a code to log "Hello World" 5 times using `setInterval` and clear the interval on the fifth print.
+- **Promises and event loop-based output questions**.
+- **DSA Question:** Create subarrays of given chunks (`k`) using both inbuilt methods and without inbuilt methods.
+- **Event Handling:**
+  - `event.stopPropagation`
+  - `event.preventDefault`
+  - `event delegation`
+  - `event.stopImmediatePropagation`
+  - `event.target` vs `event.currentTarget`
+  - Event delegation.
+
+### React Questions
+- **States and Lifecycle in React**.
+- **Routing in React**:
+  - Dynamic routing.
+  - Private and protected routes.
+  - Role-Based Access Control (RBAC) (solution using HOC, localStorage, sessionStorage).
+  - `Outlet` in React Router and ways to pass data via routing.
+  - Routing hooks.
+- **Ways to pass data in React**.
+- **State Management in React**.
+- **When does re-render happen?**
+- **React Portals and use cases**.
+- **`useRef` hook and use cases**.
+- **Memoization in React**:
+  - Use cases.
+  - Related hooks.
+- **Redux**:
+  - Architecture.
+  - Role of reducers (parameters taken by reducers).
+  - Action creators.
+  - Hook to call a reducer in Redux.
+  - How Redux figures out the correct reducer to update inside the store.
+  - Hook to select the current state in Redux.
+  - Is Redux synchronous or asynchronous?
+  - How to handle async tasks in Redux.
+- **Context API and `useContext` hook**.
+
+### CSS Questions
+- **Ways to center a div** (flexbox, position, animation).
+- **CSS Positioning**:
+  - Differences between various positions.
+  - When does an element remain in the original document flow vs being removed from the flow?
+- **Pseudo-classes in CSS**.
+
+---
+
+## Cultural Fit Round (Salary Negotiation & HR Round) (1 hr)
+
+- **Started with a DSA question**: Find the **second largest element in an array**.
+- **Projects in the current organization** and my contribution.
+- **Follow-up HR questions**.
+- **Some JavaScript theory questions** (same ones already asked in previous rounds).
