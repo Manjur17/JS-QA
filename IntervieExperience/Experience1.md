@@ -1,7 +1,7 @@
 ## 1st Techincal Round(1.15 hr)
  - 2 DSA question 
      -> find the frequency and count of repeating word in a sentence(handle uppercases and lowercases)
-     -> 2 sum( using inbuild method and without any inbuild method)
+     -> 2 sum(using inbuild method and without any inbuild method)
   
   - 1 machine coding question
      -> create a TODO application where user can 
@@ -34,7 +34,7 @@
       -> how to do object destructuring for array and object, how to assign default name to destructed    objects, type of destructed object.
       -> what is hoisting, TDZ and show code and how it works
       -> what is closure and how it works ? write a code to show the working
-      -> difference between let, const and var ?
+      -> difference between let, const and var -> write code and why const works for primitives and non-primitives?
       -> difference between setTimeout and setInterval and usecases? how to stop the setInterval?
       -> write a code to console.log("Hello world") for 5 times using setInterval and clear the interval on fifth print.
       -> Promises and a couple of output based questions on event loop.
@@ -60,7 +60,7 @@
             -> positions in css and the difference between(in which position the html elemnt remains in original document flow and in which cases it is removed from the document flow).
             -> pseudo classes in css.
 
- ## Cultral fit round(salary negotiation and hr round)
+ ## Cultral fit round(salary negotiation and hr round) (1 hr)
   -> started with a DSA question - second largest element in an array
   -> projects in current organisation and my contribution.
   -> follow up HR question.
